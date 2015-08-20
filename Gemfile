@@ -5,10 +5,10 @@ ruby '2.1.4'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.8'
 # Use sqlite3 as the database for Active Record
-group :production do
-  gem 'pg'
-  gem 'rails_12factor'
-end
+# group :production do
+#   gem 'pg'
+#   gem 'rails_12factor'
+# end
 
 group :development, :test do
   gem 'sqlite3'
@@ -40,6 +40,12 @@ gem 'spring',        group: :development
 gem 'devise', '~> 3.3.0'
 # Use unicorn as the app server
 # gem 'unicorn'
+
+gem 'carrierwave'
+gem 'omniauth-google'
+gem 'omniauth'
+gem 'omniauth-github'
+gem 'omniauth-facebook'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
